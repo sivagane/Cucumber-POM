@@ -49,6 +49,7 @@ public class StepDefinition extends TestBase {
 
 	@Then("User enters the new Contacts page verify title and enters the contact details")
 	public void user_enters_the_new_Contacts_page_verify_title_and_enters_the_contact_details() {
+		driver.switchTo().frame("mainpanel");
         String contactpagetitle = contactspage.title();
 		Assert.assertEquals("CRMPRO", contactpagetitle);
 		dealspage = contactspage.enterContactDetails(prop.getProperty("firstname"), prop.getProperty("lastname"),

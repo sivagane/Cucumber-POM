@@ -79,7 +79,7 @@ public class DealsPage extends TestBase {
 		
 		
 //		String childwinhan = itr.next();
-//		driver.switchTo().window(chihan);
+       	driver.switchTo().window(chihan);
 		
 		ContactSearch.sendKeys(contactname);
 		ContactSearchBtn.click();
